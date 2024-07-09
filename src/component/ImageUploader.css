@@ -1,0 +1,143 @@
+.upload-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.image-container {
+    width: calc(100% - 40px); /* Reduces width by 40px to account for padding */
+    height: calc(100% - 40px); /* Reduces height by 40px to account for padding */
+    margin: 20px; /* Adds margin around the element */
+    box-sizing: border-box; /* Ensures margin is included in the element's total width/height */
+}
+
+.base-image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.uploaded-image {
+  position: absolute;
+  cursor: move;
+}
+
+.image-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+}
+
+.buttons {
+  margin: 20px 0; /* Adjust the margin as needed */
+  display: flex;
+  justify-content: space-between; /* This will space out the buttons evenly */
+  padding: 0 20px; 
+}
+
+.buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.image-and-dropbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns children (image and box) vertically */
+}
+
+.base-image {
+  margin-bottom: 20px; /* Adds space between the image and the drag and drop box */
+}
+
+.drag-and-drop-box {
+  width: 80%; /* Adjust based on your design */
+  height: 100px; /* Adjust based on your design */
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.uploaded-image-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 20px; /* Adds some space between the image and the details */
+}
+
+.uploaded-image {
+  max-width: 100px; /* Adjust based on your needs */
+  height: auto; /* Keeps the aspect ratio of the image */
+}
+
+.image-details {
+  flex-grow: 1; /* Allows the details to fill the remaining space */
+}
+
+.parent-container {
+  display: flex;
+  justify-content: space-between; /* Aligns children to each side of the container */
+  align-items: stretch; /* Aligns children vertically in the center */
+}
+
+.product-details {
+  margin-top: 0; 
+  text-align: left; /* Aligns text to the right */
+  align-items: flex-start; 
+  flex-grow: 1; 
+ 
+  /* Add more styling as needed */
+}
+.upload-main {
+    padding: 5px; /* Match the padding */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    width: 100%; /* Makes the div expand to the full width of the screen */  
+}
+
+.product-details .product-name {
+  padding: 20px;
+  font-size: 40px; /* Adjust the font size as needed */
+}
+
+.product-details .product-desc {
+  padding: 20px;
+}
+
+.order-button {
+  display: block; /* Makes the button occupy its own line */
+  width: 200px; /* Sets a fixed width for the button */
+  margin: 20px auto; /* Centers the button horizontally and adds space above and below */
+  padding: 10px 0; /* Adds padding inside the button for height */
+  background-color: #007bff; /* Sets the background color */
+  color: white; /* Sets the text color */
+  font-size: 16px; /* Sets the font size */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  text-align: center; /* Ensures the text is centered */
+  text-decoration: none; /* Removes any underline from the text */
+  transition: background-color 0.3s ease; /* Adds a transition effect on hover */
+}
+
+.order-button:hover {
+  background-color: #0056b3; /* Darkens the button on hover */
+}

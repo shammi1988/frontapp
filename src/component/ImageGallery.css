@@ -1,0 +1,62 @@
+.image-gallery {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-heading {
+  text-align: center;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-info {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensures the text inside is centered if it wraps */
+  /* Uncomment and/or adjust the following properties as needed */
+  /* background-color: #f0f0f0;
+  padding: 8px; */
+  border-radius: 4px;
+  margin-top: 8px;
+  /* Add a specific height if you want to ensure vertical centering */
+  height: 50px; /* Example height, adjust as needed */
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
